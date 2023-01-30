@@ -8,7 +8,7 @@ const RandomRecipes = () => {
   useEffect(() => {
     async function fetchData() {
       const res = await fetch(
-        "https://dinner-mate-backend-production-c888.up.railway.app/dinner-mate-backend-production-c888.up.railway.app//public/home"
+        "http://dinner-mate-backend-production-c888.up.railway.app/public/home"
       );
       const data = await res.json();
       setRecipes(data);

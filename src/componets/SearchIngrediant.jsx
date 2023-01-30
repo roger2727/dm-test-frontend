@@ -12,7 +12,7 @@ const RecipeIngrediants = () => {
     async function fetchData() {
       try {
         const res = await fetch(
-          `https://dinner-mate-backend-production-c888.up.railway.app/dinner-mate-backend-production-c888.up.railway.app//public/search-ingredients/${ingredient}`
+          `http://dinner-mate-backend-production-c888.up.railway.app/public/search-ingredients/${ingredient}`
         );
         const data = await res.json();
         setRecipes(data.recipes);

@@ -10,7 +10,7 @@ const RecipeCategory = () => {
 
   useEffect(() => {
     fetch(
-      `https://dinner-mate-backend-production-c888.up.railway.app/dinner-mate-backend-production-c888.up.railway.app//public/category/${category}`
+      `http://dinner-mate-backend-production-c888.up.railway.app/public/category/${category}`
     )
       .then((res) => res.json())
       .then((data) => setRecipes(data))

@@ -8,7 +8,7 @@ const Nav = () => {
   const handleLogout = async () => {
     try {
       const response = await fetch(
-        "https://dinner-mate-backend-production-c888.up.railway.app/dinner-mate-backend-production-c888.up.railway.app//auth/logout",
+        "http://dinner-mate-backend-production-c888.up.railway.app/auth/logout",
         {
           method: "POST",
         }

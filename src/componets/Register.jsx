@@ -17,7 +17,7 @@ const Register = () => {
     try {
       const newUser = { email, password, username };
       await fetch(
-        "https://dinner-mate-backend-production-c888.up.railway.app/dinner-mate-backend-production-c888.up.railway.app//auth/register",
+        "http://dinner-mate-backend-production-c888.up.railway.app/auth/register",
         {
           method: "POST",
           headers: {

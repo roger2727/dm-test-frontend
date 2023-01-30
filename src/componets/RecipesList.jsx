@@ -13,7 +13,7 @@ const UserRecipes = () => {
     const getRecipes = async () => {
       try {
         const response = await fetch(
-          "https://dinner-mate-backend-production-c888.up.railway.app/dinner-mate-backend-production-c888.up.railway.app//recipes/all",
+          "http://dinner-mate-backend-production-c888.up.railway.app/recipes/all",
           {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"),
@@ -33,7 +33,7 @@ const UserRecipes = () => {
   const handleDelete = async (recipeId) => {
     try {
       await fetch(
-        `https://dinner-mate-backend-production-c888.up.railway.app/dinner-mate-backend-production-c888.up.railway.app//recipes/delete/${recipeId}`,
+        `http://https://dinner-mate-backend-production-c888.up.railway.app//recipes/delete/${recipeId}`,
         {
           method: "DELETE",
           headers: {
