@@ -8,7 +8,7 @@ const RecipeCarousel = () => {
 
   useEffect(() => {
     fetch(
-      "http://https://dinner-mate-backend-production-c888.up.railway.app//public/all"
+      "https://dinner-mate-backend-production-c888.up.railway.app/dinner-mate-backend-production-c888.up.railway.app//public/all"
     )
       .then((res) => res.json())
       .then((data) => setRecipes(data.recipes))

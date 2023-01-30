@@ -13,7 +13,7 @@ const RecipeServingSize = () => {
     async function fetchData() {
       try {
         const res = await fetch(
-          `http://https://dinner-mate-backend-production-c888.up.railway.app//public/search-serving-size/${servingSize}`
+          `https://dinner-mate-backend-production-c888.up.railway.app/dinner-mate-backend-production-c888.up.railway.app//public/search-serving-size/${servingSize}`
         );
         const data = await res.json();
         setRecipes(data.recipes);
