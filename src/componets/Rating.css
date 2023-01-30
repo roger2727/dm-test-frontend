@@ -1,0 +1,14 @@
+.star {
+  color: #ffd700;
+  font-size: 50px;
+}
+.star-box {
+  /* background-color: #085659; */
+  border-radius: 50px;
+
+  text-align: center;
+}
+.star-outline {
+  color: #dcdee6;
+  font-size: 50px;
+}

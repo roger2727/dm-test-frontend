@@ -1,0 +1,19 @@
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  gap: 1rem;
+  border: solid 1px black;
+  padding: 20px;
+  border-radius: 20px;
+}
+.login-label {
+  display: flex;
+  flex-direction: column;
+}
