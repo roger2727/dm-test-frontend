@@ -12,11 +12,14 @@ const UserRecipes = () => {
   useEffect(() => {
     const getRecipes = async () => {
       try {
-        const response = await fetch("http://localhost:4001/recipes/all", {
-          headers: {
-            Authorization: "Bearer " + localStorage.getItem("token"),
-          },
-        });
+        const response = await fetch(
+          "http://https://dinner-mate-backend-production-c888.up.railway.app//recipes/all",
+          {
+            headers: {
+              Authorization: "Bearer " + localStorage.getItem("token"),
+            },
+          }
+        );
         const data = await response.json();
         setRecipes(data.recipes);
         setCurrentUserId(data.userId);
@@ -29,12 +32,15 @@ const UserRecipes = () => {
 
   const handleDelete = async (recipeId) => {
     try {
-      await fetch(`http://localhost:4001/recipes/delete/${recipeId}`, {
-        method: "DELETE",
-        headers: {
-          Authorization: "Bearer " + localStorage.getItem("token"),
-        },
-      });
+      await fetch(
+        `http://https://dinner-mate-backend-production-c888.up.railway.app//recipes/delete/${recipeId}`,
+        {
+          method: "DELETE",
+          headers: {
+            Authorization: "Bearer " + localStorage.getItem("token"),
+          },
+        }
+      );
       // Remove the deleted recipe from the state
       setRecipes(recipes.filter((recipe) => recipe._id !== recipeId));
     } catch (err) {

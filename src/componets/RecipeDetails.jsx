@@ -13,7 +13,9 @@ const RecipeDetails = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch(`http://localhost:4001/public/${id}`);
+      const res = await fetch(
+        `http://https://dinner-mate-backend-production-c888.up.railway.app//public/${id}`
+      );
       const data = await res.json();
       setRecipe(data.recipe);
     }

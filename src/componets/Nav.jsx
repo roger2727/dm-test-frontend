@@ -7,9 +7,12 @@ const Nav = () => {
   const navigate = useNavigate();
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://localhost:4001/auth/logout", {
-        method: "POST",
-      });
+      const response = await fetch(
+        "http://https://dinner-mate-backend-production-c888.up.railway.app//auth/logout",
+        {
+          method: "POST",
+        }
+      );
       if (response.ok) {
         localStorage.removeItem("token");
         navigate("/");

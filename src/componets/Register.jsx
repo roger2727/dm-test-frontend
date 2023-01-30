@@ -16,13 +16,16 @@ const Register = () => {
     e.preventDefault();
     try {
       const newUser = { email, password, username };
-      await fetch("http://localhost:4001/auth/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newUser),
-      });
+      await fetch(
+        "http://https://dinner-mate-backend-production-c888.up.railway.app//auth/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newUser),
+        }
+      );
       navigate("/login");
     } catch (err) {
       console.error(err);

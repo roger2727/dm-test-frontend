@@ -15,13 +15,16 @@ const Login = () => {
     e.preventDefault();
     try {
       const { email, password } = formData;
-      const response = await fetch("http://localhost:4001/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
+      const response = await fetch(
+        "http://https://dinner-mate-backend-production-c888.up.railway.app//auth/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, password }),
+        }
+      );
       const data = await response.json();
 
       if (data.token) {

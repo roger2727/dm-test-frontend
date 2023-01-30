@@ -10,7 +10,7 @@ const UpdateRecipe = () => {
     const getRecipe = async () => {
       try {
         const response = await fetch(
-          `http://localhost:4001/public/${recipeId}`,
+          `http://https://dinner-mate-backend-production-c888.up.railway.app//public/${recipeId}`,
           {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"),
@@ -29,14 +29,17 @@ const UpdateRecipe = () => {
   const handleUpdate = async (event) => {
     event.preventDefault();
     try {
-      await fetch(`http://localhost:4001/recipes/update/${recipeId}`, {
-        method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: "Bearer " + localStorage.getItem("token"),
-        },
-        body: JSON.stringify(recipe),
-      });
+      await fetch(
+        `http://https://dinner-mate-backend-production-c888.up.railway.app//recipes/update/${recipeId}`,
+        {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + localStorage.getItem("token"),
+          },
+          body: JSON.stringify(recipe),
+        }
+      );
       navigate(`/public/${recipeId}`);
     } catch (err) {
       console.error(err);

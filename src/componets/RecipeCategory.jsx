@@ -9,7 +9,9 @@ const RecipeCategory = () => {
   const { category } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:4001/public/category/${category}`)
+    fetch(
+      `http://https://dinner-mate-backend-production-c888.up.railway.app//public/category/${category}`
+    )
       .then((res) => res.json())
       .then((data) => setRecipes(data))
       .catch((err) => console.log(err));

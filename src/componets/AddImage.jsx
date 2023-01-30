@@ -20,7 +20,7 @@ const AddImage = () => {
       const formData = new FormData();
       formData.append("image", selectedImage);
       const response = await fetch(
-        `http://localhost:4001/recipes/upload-image/${recipeId}?width=300`,
+        `http://https://dinner-mate-backend-production-c888.up.railway.app//recipes/upload-image/${recipeId}?width=300`,
         {
           method: "POST",
           body: formData,

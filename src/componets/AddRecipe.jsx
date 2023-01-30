@@ -40,17 +40,20 @@ const AddRecipe = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:4001/recipes/add", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-        body: JSON.stringify({
-          ...formData,
-          createdAt: new Date(),
-        }),
-      });
+      const response = await fetch(
+        "http://https://dinner-mate-backend-production-c888.up.railway.app//recipes/add",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+          body: JSON.stringify({
+            ...formData,
+            createdAt: new Date(),
+          }),
+        }
+      );
       if (response.ok) {
         console.log(response);
         const json = await response.json();
