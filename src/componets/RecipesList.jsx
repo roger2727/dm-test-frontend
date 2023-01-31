@@ -33,7 +33,7 @@ const UserRecipes = () => {
   const handleDelete = async (recipeId) => {
     try {
       await fetch(
-        `http://https://dinner-mate-backend-production-c888.up.railway.app//recipes/delete/${recipeId}`,
+        `https://dm-backend-test-production.up.railway.app/recipes/delete/${recipeId}`,
         {
           method: "DELETE",
           headers: {
