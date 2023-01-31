@@ -4,7 +4,7 @@ import Login from "./componets/Login";
 import AddRecipe from "./componets/AddRecipe";
 import AddImage from "./componets/AddImage";
 import UserRecipes from "./componets/RecipesList";
-import Home from "./componets/Home";
+import Home from "./componets/home";
 import RecipeDetails from "./componets/RecipeDetails";
 import RecipeCategory from "./componets/RecipeCategory";
 import RecipeIngrediants from "./componets/SearchIngrediant";
