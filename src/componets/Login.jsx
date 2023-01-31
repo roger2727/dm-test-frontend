@@ -16,7 +16,7 @@ const Login = () => {
     try {
       const { email, password } = formData;
       const response = await fetch(
-        "http://dinner-mate-backend-production-c888.up.railway.app/auth/login",
+        "https://dm-backend-test-production.up.railway.app/auth/login",
         {
           method: "POST",
           headers: {

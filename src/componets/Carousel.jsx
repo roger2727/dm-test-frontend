@@ -7,9 +7,7 @@ const RecipeCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    fetch(
-      "http://dinner-mate-backend-production-c888.up.railway.app/public/all"
-    )
+    fetch("https://dm-backend-test-production.up.railway.app/public/all")
       .then((res) => res.json())
       .then((data) => setRecipes(data.recipes))
       .catch((err) => console.log(err));

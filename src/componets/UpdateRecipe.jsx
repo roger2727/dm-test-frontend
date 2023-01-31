@@ -10,7 +10,7 @@ const UpdateRecipe = () => {
     const getRecipe = async () => {
       try {
         const response = await fetch(
-          `http://dinner-mate-backend-production-c888.up.railway.app/public/${recipeId}`,
+          `https://dm-backend-test-production.up.railway.app/public/${recipeId}`,
           {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"),

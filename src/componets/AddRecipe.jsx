@@ -41,7 +41,7 @@ const AddRecipe = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "http://dinner-mate-backend-production-c888.up.railway.app/recipes/add",
+        "https://dm-backend-test-production.up.railway.app/recipes/add",
         {
           method: "POST",
           headers: {

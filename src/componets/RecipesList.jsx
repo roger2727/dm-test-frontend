@@ -13,7 +13,7 @@ const UserRecipes = () => {
     const getRecipes = async () => {
       try {
         const response = await fetch(
-          "http://dinner-mate-backend-production-c888.up.railway.app/recipes/all",
+          "https://dm-backend-test-production.up.railway.app/recipes/all",
           {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"),
