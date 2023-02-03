@@ -9,6 +9,8 @@ const UserRecipes = () => {
   const { userId } = useParams();
   const [currentUserId, setCurrentUserId] = useState("");
 
+  const [favorites, setFavorites] = useState([]);
+
   useEffect(() => {
     const getRecipes = async () => {
       try {
@@ -54,6 +56,19 @@ const UserRecipes = () => {
 
   return (
     <div>
+      <Nav />
+      <div className="list-box">
+        {recipes.map((recipe) => (
+          <div className="each" key={recipe._id}>
+            {/* display recipe */}
+          </div>
+        ))}
+        {favorites.map((favorite) => (
+          <div className="each" key={favorite._id}>
+            {/* display favorite recipe */}
+          </div>
+        ))}
+      </div>
       <Nav />
       <div className="list-box">
         {recipes.map((recipe) => (

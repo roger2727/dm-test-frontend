@@ -169,17 +169,7 @@ const AddRecipe = () => {
                 max="5"
               />
             </div>
-            <div>
-              <label htmlFor="image">Image URL</label>
-              <input
-                className="form-input"
-                type="text"
-                name="image"
-                value={formData.image}
-                onChange={onChange}
-                required
-              />
-            </div>
+
             <div className="submit-button">
               <button className="form-btn" type="submit">
                 Add Recipe
