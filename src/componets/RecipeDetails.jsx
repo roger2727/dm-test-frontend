@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import "./RecipeDetails.css";
 import SearchRecipes from "./SearchRecipes";
 import Rating from "./Rating";
-
+import SaveRecipeButton from "../componets/fav.jsx";
 const RecipeDetails = () => {
   const { id } = useParams();
   const [recipe, setRecipe] = useState({});
@@ -69,6 +69,7 @@ const RecipeDetails = () => {
           <p>Serving Size: {recipe.servingSize}</p>
 
           <p>Vegetarian: {recipe.vegetarian ? "Yes" : "No"}</p>
+          <SaveRecipeButton />
         </div>
       </div>
     </div>
